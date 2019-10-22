@@ -151,6 +151,11 @@ p {
   margin-top: 5%;
   line-height: 1.7;
 }
+@media (min-width: 1300px) {
+  body {
+    margin: 0 20%;
+  }
+}
 @media (min-width: 1000px) {
   header {
     display: flex;
@@ -284,6 +289,14 @@ main section {
     display: flex;
   }
 }
+@media (min-width: 800px) {
+  main section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main section .copy {
   margin-top: 10%;
 }
@@ -296,6 +309,12 @@ main section .copy {
     padding: 0 5%;
   }
 }
+@media (min-width: 800px) {
+  main section .copy {
+    margin: 0 5%;
+    width: 55%;
+  }
+}
 main section .feature-image {
   margin-top: 10%;
 }
@@ -304,20 +323,26 @@ main section .feature-image {
     width: 40%;
   }
 }
-main section img {
+@media (min-width: 800px) {
+  main section .feature-image {
+    margin: 0;
+    width: 55%;
+  }
+}
+main section .feature-image img {
   box-shadow: 2px 2px 12px -4px black;
   width: 100%;
   margin-top: 10%;
   border-radius: 7px;
 }
 @media (min-width: 1000px) {
-  main .reverse {
+  main section .reverse {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 @media (min-width: 1000px) {
-  main .reverse div {
+  main section .reverse div {
     padding-left: 3%;
   }
 }
@@ -331,11 +356,6 @@ main header .about img {
   main .team-container {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-@media (min-width: 800px) {
-  main section {
-    width: 50%;
   }
 }
 @media (min-width: 1000px) {
