@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+h1 {
+  font-size: 5rem;
+  margin-top: 11%;
+  line-height: 1.07;
+  font-weight: 700;
+}
+h2 {
+  font-size: 3.2rem;
+}
+p {
+  font-size: 1.8rem;
+  margin-top: 5%;
+  line-height: 1.7;
+}
+@media (min-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1000px) {
+  header nav {
+    width: 40%;
+  }
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul li {
+  width: 50%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  letter-spacing: 0.06rem;
+}
+@media (min-width: 1000px) {
+  header nav ul li a {
+    color: black;
+  }
+}
+header nav ul .first-button {
+  background-color: #5887F9;
+}
+@media (min-width: 1000px) {
+  header nav ul .first-button {
+    background: none;
+    color: black;
+  }
+}
+header nav ul .second-button {
+  background-color: #5574F7;
+}
+@media (min-width: 1000px) {
+  header nav ul .second-button {
+    background: none;
+  }
+}
+header .logo-image {
+  display: flex;
+  justify-content: center;
+  margin: 3% 0;
+}
+header .logo-image img {
+  width: 50%;
+}
+header .logo-image a {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 10%;
+}
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+main {
+  width: 100%;
+}
+main header {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  main header {
+    flex-direction: row-reverse;
+  }
+}
+main header .illustration {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+main header .illustration img {
+  width: 60%;
+}
+@media (min-width: 1000px) {
+  main header .illustration {
+    flex-direction: row-reverse;
+  }
+}
+main header button {
+  width: 100%;
+  padding: 5% 15%;
+  background-color: #D7681D;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-top: 8%;
+  border: 0;
+}
+main header p.sign-in {
+  font-size: 1.4rem;
+  margin-top: 3%;
+}
+main header p.sign-in a {
+  color: #0a5792;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #0a5792;
+  padding-bottom: 0.14rem;
+}
+main section {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 10%;
+}
+@media (min-width: 1000px) {
+  main section {
+    display: flex;
+  }
+}
+@media (min-width: 1000px) {
+  main section .copy {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (min-width: 1000px) {
+  main section .feature-image {
+    width: 40%;
+  }
+}
+main section img {
+  width: 100%;
+  margin-top: 10%;
+}
+@media (min-width: 1000px) {
+  main .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1000px) {
+  main .reverse div {
+    padding-left: 3%;
+  }
+}

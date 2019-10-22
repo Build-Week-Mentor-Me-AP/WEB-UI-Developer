@@ -1,0 +1,60 @@
+header {
+    @media @desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav {
+        @media @desktop {
+            width: 40%;
+            }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            li {
+                width: 50%;
+                height: 6vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a {
+                    color: white;
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                    letter-spacing: .06rem;
+                    @media @desktop {
+                    color: black;
+                    }
+                }
+
+            }
+            .first-button {
+                background-color: #5887F9;
+                @media @desktop {
+                    background: none;
+                    color: black;
+                }
+            }
+            .second-button {
+                background-color: #5574F7;
+                @media @desktop {
+                    background: none;
+        
+                }
+            }
+    
+        }
+    }
+    .logo-image {
+        display: flex;
+        justify-content: center;
+        margin: 3% 0;
+        img {
+            width: 50%;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
