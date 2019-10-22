@@ -261,6 +261,7 @@ main header button {
   font-weight: 600;
   margin-top: 8%;
   border: 0;
+  cursor: pointer;
 }
 main header p.sign-in {
   font-size: 1.4rem;
@@ -283,13 +284,20 @@ main section {
     display: flex;
   }
 }
+main section .copy {
+  margin-top: 10%;
+}
 @media (min-width: 1000px) {
   main section .copy {
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 5%;
   }
+}
+main section .feature-image {
+  margin-top: 10%;
 }
 @media (min-width: 1000px) {
   main section .feature-image {
@@ -297,8 +305,10 @@ main section {
   }
 }
 main section img {
+  box-shadow: 2px 2px 12px -4px black;
   width: 100%;
   margin-top: 10%;
+  border-radius: 7px;
 }
 @media (min-width: 1000px) {
   main .reverse {
@@ -309,5 +319,27 @@ main section img {
 @media (min-width: 1000px) {
   main .reverse div {
     padding-left: 3%;
+  }
+}
+main header .about {
+  margin-top: 20%;
+}
+main header .about img {
+  width: 100%;
+}
+@media (min-width: 800px) {
+  main .team-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 800px) {
+  main section {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  main section {
+    width: 100%;
   }
 }
