@@ -12,8 +12,7 @@ main {
         }
         
         .illustration {
-            display: flex;
-            justify-content: center;
+            .layout(center);
             margin-top: 10%;
             img {
                 width: 60%;
@@ -57,18 +56,16 @@ main {
             display: flex;
         };
         @media @tablet {
-            display: flex;
+            .layout(center);
             width: 100%;
-            justify-content: center;
             align-items: center;
         };
         .copy {
             margin-top: 10%;
             @media @desktop {
                 width: 60%;
-                display: flex;
                 flex-direction: column;
-                justify-content: center;
+                .layout(center);
                 padding: 0 5%;
             }   
             @media @tablet {
@@ -94,13 +91,17 @@ main {
                     margin-top: 10%;
                     border-radius: 7px;
                 }
-            }
+            } // end .feature-image
+    } // end section
 
     .reverse {
         @media @desktop {
             display: flex;
-            flex-direction: row-reverse;
-            
+            flex-direction: row-reverse; 
+        }
+        @media @desktop {
+            display: flex;
+            flex-direction: row-reverse; 
         }
         div {
             @media @desktop {
@@ -108,5 +109,6 @@ main {
             }
         }
     }
-}
-}
+
+
+} // end main
