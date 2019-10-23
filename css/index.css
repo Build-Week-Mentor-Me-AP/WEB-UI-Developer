@@ -159,7 +159,7 @@ p {
 @media (min-width: 1000px) {
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media (min-width: 1000px) {
@@ -171,6 +171,14 @@ header nav ul {
   display: flex;
   justify-content: space-around;
 }
+header nav ul .only-desktop {
+  display: none;
+}
+@media (min-width: 1000px) {
+  header nav ul .only-desktop {
+    display: inline-flex;
+  }
+}
 header nav ul li {
   width: 50%;
   height: 6vh;
@@ -180,8 +188,8 @@ header nav ul li {
 }
 header nav ul li a {
   color: white;
-  font-weight: 600;
-  font-size: 1.3rem;
+  font-weight: 400;
+  font-size: 1.4rem;
   text-decoration: none;
   letter-spacing: 0.06rem;
 }
@@ -292,8 +300,8 @@ main section {
 @media (min-width: 800px) {
   main section {
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
     align-items: center;
   }
 }
@@ -303,8 +311,8 @@ main section .copy {
 @media (min-width: 1000px) {
   main section .copy {
     width: 60%;
-    display: flex;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     padding: 0 5%;
   }
@@ -336,13 +344,19 @@ main section .feature-image img {
   border-radius: 7px;
 }
 @media (min-width: 1000px) {
-  main section .reverse {
+  main .reverse {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 @media (min-width: 1000px) {
-  main section .reverse div {
+  main .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1000px) {
+  main .reverse div {
     padding-left: 3%;
   }
 }
@@ -362,4 +376,7 @@ main header .about img {
   main section {
     width: 100%;
   }
+}
+main section .icons img:hover {
+  filter: brightness(0.5) sepia(1) saturate(10000%);
 }

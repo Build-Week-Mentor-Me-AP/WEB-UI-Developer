@@ -1,7 +1,7 @@
 header {
     @media @desktop {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     nav {
         @media @desktop {
@@ -10,16 +10,21 @@ header {
         ul {
             display: flex;
             justify-content: space-around;
+            .only-desktop {
+                display: none;
+                @media @desktop {
+                    display: inline-flex;
+                }
+            }
             li {
                 width: 50%;
                 height: 6vh;
-                display: flex;
-                justify-content: center;
+                .layout(center);
                 align-items: center;
                 a {
                     color: white;
-                    font-weight: 600;
-                    font-size: 1.3rem;
+                    font-weight: 400;
+                    font-size: 1.4rem;
                     text-decoration: none;
                     letter-spacing: .06rem;
                     @media @desktop {
@@ -46,15 +51,13 @@ header {
         }
     }
     .logo-image {
-        display: flex;
-        justify-content: center;
+        .layout(center);
         margin: 3% 0;
         img {
             width: 50%;
         }
         a {
-            display: flex;
-            justify-content: center;
+            .layout(center);
         }
     }
 }
