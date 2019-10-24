@@ -222,6 +222,7 @@ header .logo-image {
 }
 header .logo-image img {
   width: 50%;
+  height: auto;
 }
 header .logo-image a {
   display: flex;
@@ -257,6 +258,7 @@ main header .illustration {
 }
 main header .illustration img {
   width: 60%;
+  height: auto;
 }
 @media (min-width: 1000px) {
   main header .illustration {
@@ -340,6 +342,7 @@ main section .feature-image {
 main section .feature-image img {
   box-shadow: 2px 2px 12px -4px black;
   width: 100%;
+  height: auto;
   margin-top: 10%;
   border-radius: 7px;
 }
@@ -365,6 +368,7 @@ main header .about {
 }
 main header .about img {
   width: 100%;
+  height: auto;
 }
 @media (min-width: 800px) {
   main .team-container {
