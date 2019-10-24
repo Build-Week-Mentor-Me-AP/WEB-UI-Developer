@@ -262,13 +262,13 @@ main header .illustration {
   }
 }
 main header .illustration img {
-  width: 264px;
-  height: auto;
+  width: auto;
+  height: 264px;
 }
 @media (min-width: 1000px) {
   main header .illustration img {
     width: auto;
-    height: 258px;
+    height: 264px;
   }
 }
 @media (min-width: 1000px) {
