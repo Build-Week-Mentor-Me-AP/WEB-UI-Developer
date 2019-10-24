@@ -14,9 +14,19 @@ main {
         .illustration {
             .layout(center);
             margin-top: 10%;
+            @media @desktop {
+                margin: 10%;
+            }
             img {
-                max-width: 60%;
+                width: 264px;
                 height: auto;
+                @media @desktop {
+                    width: 258px;
+                    height: auto;
+                }
+                @media @tablet {
+
+                }
             }
             @media @desktop {
                 flex-direction: row-reverse;

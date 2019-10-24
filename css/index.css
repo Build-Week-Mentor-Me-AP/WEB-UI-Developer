@@ -221,7 +221,7 @@ header .logo-image {
   margin: 3% 0;
 }
 header .logo-image img {
-  width: 50%;
+  width: 258px;
   height: auto;
 }
 header .logo-image a {
@@ -256,9 +256,20 @@ main header .illustration {
   justify-content: center;
   margin-top: 10%;
 }
+@media (min-width: 1000px) {
+  main header .illustration {
+    margin: 10%;
+  }
+}
 main header .illustration img {
-  max-width: 60%;
+  width: 264px;
   height: auto;
+}
+@media (min-width: 1000px) {
+  main header .illustration img {
+    width: 258px;
+    height: auto;
+  }
 }
 @media (min-width: 1000px) {
   main header .illustration {
@@ -367,8 +378,9 @@ main header .about {
   margin-top: 7%;
 }
 main header .about img {
-  width: 100%;
+  max-width: 740px;
   height: auto;
+  width: 100%;
 }
 @media (min-width: 800px) {
   main .team-container {
