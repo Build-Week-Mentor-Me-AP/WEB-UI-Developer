@@ -221,8 +221,8 @@ header .logo-image {
   margin: 3% 0;
 }
 header .logo-image img {
-  width: 258px;
-  height: auto;
+  width: auto;
+  height: 59px;
 }
 header .logo-image a {
   display: flex;
@@ -267,8 +267,8 @@ main header .illustration img {
 }
 @media (min-width: 1000px) {
   main header .illustration img {
-    width: 258px;
-    height: auto;
+    width: auto;
+    height: 258px;
   }
 }
 @media (min-width: 1000px) {
@@ -379,8 +379,8 @@ main header .about {
 }
 main header .about img {
   max-width: 740px;
-  height: auto;
-  width: 100%;
+  height: 240px;
+  width: auto;
 }
 @media (min-width: 800px) {
   main .team-container {
