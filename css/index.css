@@ -257,7 +257,7 @@ main header .illustration {
   margin-top: 10%;
 }
 main header .illustration img {
-  width: 60%;
+  max-width: 60%;
   height: auto;
 }
 @media (min-width: 1000px) {
